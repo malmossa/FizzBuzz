@@ -15,6 +15,14 @@ function fizzBuzz() {
 
   // Generating numbers 1 to 100
   for(let i = 0; i <= 100; i++) {
-    numbersArray.push(i)
+    if (i % input1 !== 0) {
+      numbersArray.push("Fizz")
+    } else if (i % input2 !== 0) {
+      numbersArray.push("Buzz")
+    } else {
+      numbersArray.push(i)
+    }
   }
+
+  console.log(numbersArray)
 }

@@ -7,7 +7,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>Zero To Hundred</title>
+  <title>Fizz Buzz</title>
 
   <!-- Bootstrap CSS & Fontawesome -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" target="_blank" href="https://github.com/malmossa/Zero-To-Hundred"> Git Repo </a>
+            <a class="nav-link" target="_blank" href="https://github.com/malmossa/FizzBuzz"> Git Repo </a>
           </li>
         </ul>
       </div>
@@ -59,29 +59,30 @@
     <div class="container mt-5">
       <div class="row row-cols-1 row-cols-lg-2">
         <div class="col col-lg-4 border-right border-2">
-          <h1>Zero To Hundred: A Coding Project</h1>
+          <h1>Fizz Buzz: A Coding Project</h1>
           <h4 class="lead">
-            Live life one loop at a time. A JavaScript exercise using loops.
-            Write a program the displays the numbers from 0 to 100. Display
-            the even numbers in <strong>BOLD</strong>
+            When it counts you Fizz Buzz, A JavaScript Coding challenge. A program that prints the numbers from 1 to 100
+            and for multiples of '3' display "<strong>Fizz</strong>" instead of the number and for the multiples of '5'
+            display "<strong>Buzz</strong>".
+            if a multiple of both display "<strong>FizzBuzz</strong>".
           </h4>
           <h2 class="mt-2 border-bottom border-2">Instructions</h2>
-          <p>Enter a starting value and a ending value. Press the button and the values will appear.</p>
+          <p>Enter a fizz and a buzz value. Press the button and the values will appear.</p>
         </div>
         <div class="col col-lg-8">
           <div>
             <h5>Enter Values</h5>
             <form class="row gy-2 gx-3">
               <div class="col">
-                <input id="startValue" type="number" class="form-control" placeholder="Start Value" value=0
-                  aria-label="Start Value">
+                <input id="fizzValue" type="number" class="form-control" placeholder="Fizz Value"
+                  aria-label="Fizz Value">
               </div>
               <div class="col">
-                <input id="endValue" type="number" class="form-control" placeholder="End Value" value=100
-                  aria-label="End Value">
+                <input id="buzzValue" type="number" class="form-control" placeholder="Buzz Value"
+                  aria-label="Buzz Value">
               </div>
               <div class="col-12 d-flex justify-content-end mt-1">
-                <button id="btnSubmit" type="button" class="btn btn-dark btn-lg">Display the Values</button>
+                <button id="btnSubmit" type="button" class="btn btn-dark">Buzz it</button>
               </div>
             </form>
             <h2 class="mt-5 border-bottom border-2">Results</h2>

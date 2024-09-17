@@ -1,45 +1,52 @@
-const  startValue = document.getElementById("startValue");
-const endValue = document.getElementById("endValue");
+const fizz = document.getElementById("fizzValue");
+const buzz = document.getElementById("buzzValue");
 const btn = document.getElementById("btnSubmit");
 const result = document.getElementById("results");
 
-btn.addEventListener("click", displayValues);
+btn.addEventListener("click", getValueRange);
 
 
-function getValues()
+
+/* Add the range to an array */
+function getValueRange()
 {
-  let start = startValue.value;
-  let end = endValue.value;
-
-  // Convert to integers
-  start = parseInt(start);
-  end = parseInt(end);
-
-  let valuesRange = [];
-
-  for (let i = start; i <= end; i++)
+  /* Get and convert user input */
+  let fizzValue = parseInt(fizz.value);
+  let buzzValue = parseInt(buzz.value);
+  let array = [];
+  for (let i = fizzValue; i <= buzzValue; i++)
   {
-    valuesRange.push(i);
+    array.push(i);
   }
-
-  return valuesRange;
+  console.log(array);
 }
+
+function doFizzBuzz()
+{
+  let numbers = getValueRange();
+  let fizzBuzzArray = [];
+
+
+  console.log(numbers);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function displayValues()
 {
-  let numbers = getValues();
-
-  let className = "";
-
-  for (let i = 0; i < numbers.length; i++)
+  for (let i = 0; i <= numbers.length -1; i+=10)
   {
-    if (numbers[i] % 2 == 0)
-    {
-      className = "even";
-    } else {
-      className = "odd";
-    }
-    result.innerHTML += `<tr><td class="${className}">${numbers[i]}</td></tr>`;
+    result.innerHTML += `<tr><td>"test"</td></tr>`;
   }
 }

@@ -37,6 +37,9 @@ function displayValues()
 {
   let array = doFizzBuzz();
 
+  // Clear the previous table
+  result.innerHTML = "";
+
   for (let i = 0; i < array.length; i+=10)
   {
     let row = document.createElement("tr");

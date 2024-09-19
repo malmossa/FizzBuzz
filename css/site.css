@@ -77,3 +77,8 @@ pre[class*="language-"] {
 main > .container {
   padding: 60px 15px 0;
 }
+
+.fizzBuzz {
+  font-weight: bold;
+  font-style: italic
+}

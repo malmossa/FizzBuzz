@@ -37,17 +37,23 @@ function displayValues()
 {
   let array = doFizzBuzz();
 
-
-
-  for (let i = 0; i < array.length -1; i+=10)
+  for (let i = 0; i < array.length; i+=10)
   {
-    let value;
-    result.innerHTML += `<tr><td>${value}</td></tr>`;
+    let row = document.createElement("tr");
 
-    for (let j = 0; j < array.length; j++)
+    for (let j = 0; j < 10 && (i + j) < array.length; j++ )
     {
-      value = array[j];
+      let cell = document.createElement("td");
+      cell.textContent = array[i + j];
+
+      if (cell.textContent == "Fizz" || cell.textContent == "Buzz" || cell.textContent == "FizzBuzz")
+      {
+        cell.classList.add("fizzBuzz");
+      }
+
+      row.appendChild(cell);
     }
+    result.appendChild(row);
   }
 
 }

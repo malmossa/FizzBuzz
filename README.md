@@ -1,2 +1,3 @@
-# JsSiteTemplate
-This a Starter JS Template for All JavaScript projects 
+# JavaScript Project 
+Try it out: https://malmossa.github.io/FizzBuzz/
+<a href="https://github.com" target="_blank">Visit GitHub</a>
